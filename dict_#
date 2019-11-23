@@ -39,6 +39,8 @@ inurl:errormessage=
 #文件格式备份文件
 filetype:xls
 filetype:pdf
+#文件包含
+inurl:include
 filetype:sql
 filetype:rar
 filetype:zip
