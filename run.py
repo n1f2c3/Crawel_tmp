@@ -1,5 +1,6 @@
 from optparse import OptionParser
-import crawl
+from baidu_Crawl import *
+from  baidu_Crawl import baiducrawl
 
 if __name__ == '__main__':
     optParser = OptionParser('-t <xxx.com >  -w <inurl: id>  --world <dictpatj> ')
@@ -8,7 +9,7 @@ if __name__ == '__main__':
     optParser.add_option("-t", "--tagerget", action="store", type="string", default="tagerget", dest="tagerget" ,help="mubiao")
     option, args = optParser.parse_args()
     if option.world!="test":
-        a=crawl.baidudork(option.world)
+        a=baiducrawl.baidudork(option.world)
     if option.wordlist!="dict_#":
         f=open(option.wordlist,"r",encoding='utf-8')
         op=f.readlines()
@@ -17,7 +18,7 @@ if __name__ == '__main__':
             if i[0:1]=="#":
                 pass
             else:
-                a=crawl.baidudork("site:"+option.tagerget+"  "+i)
+                a=baiducrawl.baidudork("site:"+option.tagerget+"  "+i)
                 a.crawler()
     if option.wordlist == "dict_#":
         f = open(option.wordlist, "r",encoding='utf-8')
@@ -27,6 +28,6 @@ if __name__ == '__main__':
             if i[0:1] == "#":
                 pass
             else:
-                a = crawl.baidudork("site:" + option.tagerget + "  " + i)
+                a = baiducrawl.baidudork("site:" + option.tagerget + "  " + i)
                 print("site:" + option.tagerget + "  " + i)
                 a.crawler()
