@@ -2,7 +2,6 @@ import   requests
 import re
 import time
 headers={"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36",
-         "Cookie":'''sShow=true; gr_user_id=f0229e25-3a1f-46de-8dbc-c851d48eb444; grwng_uid=0d9ac13a-6f82-40a0-be84-3e548797bc90; mp_40eb2e7c7c9c8e218deaab4af6edde86_mixpanel=%7B%22distinct_id%22%3A%20%221922161338%7C41.81270357915609%22%2C%22%24device_id%22%3A%20%22172a30e3cfc21-023a43f0b1f335-f7d123e-100200-172a30e3cfd2a6%22%2C%22%24initial_referrer%22%3A%20%22https%3A%2F%2Fx.threatbook.cn%2Fen%22%2C%22%24initial_referring_domain%22%3A%20%22x.threatbook.cn%22%2C%22__mps%22%3A%20%7B%7D%2C%22__mpso%22%3A%20%7B%7D%2C%22__mpus%22%3A%20%7B%7D%2C%22__mpa%22%3A%20%7B%7D%2C%22__mpu%22%3A%20%7B%7D%2C%22__mpr%22%3A%20%5B%5D%2C%22__mpap%22%3A%20%5B%5D%2C%22%24user_id%22%3A%20%221922161338%7C41.81270357915609%22%7D; gr_session_id_93c2f45e22af239e=6e2c1d6b-92c4-4035-a86f-09ef22ec2edd; gr_cs1_6e2c1d6b-92c4-4035-a86f-09ef22ec2edd=username%3A1922161338%40qq.com; Hm_lvt_7fe1ffa0ec1869ee64eeb064aa1eeb72=1591939186,1591943565,1591948453,1592010525; gr_session_id_93c2f45e22af239e_6e2c1d6b-92c4-4035-a86f-09ef22ec2edd=true; 889930cec4eb8153_gr_session_id=d45f514a-0282-46af-84b3-7d484e44a3d2; 889930cec4eb8153_gr_session_id_d45f514a-0282-46af-84b3-7d484e44a3d2=true; islogin=undefined; Hm_lpvt_7fe1ffa0ec1869ee64eeb064aa1eeb72=1592010597; VB_LANG=zh; rememberme=49dae732101c7774883be84eef586bf9c46a33dd|nggua08wnnbh@woyoxin.com|1592010652926'''}
 
 
 
